@@ -1,0 +1,335 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:Arial,Tahoma,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.my-logo{position:fixed;bottom:0;left:0;margin:0;padding:0}.my-logo__pic{border:0;vertical-align:middle;width:50px;height:50px}body{margin:0;padding:0;font:1em/1.4em sans-serif;color:#353535}
+
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+@import 'https://fonts.googleapis.com/css?family=Arimo';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  font: 1em/1.6em "Open Sans", sans-serif;
+  color: #353535;
+  background: #ccc;
+}
+.section {
+    text-align: center;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.7em;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+}
+h3 {
+    font-size: 3.8em;
+    color: #000;
+}
+li {
+    list-style-type: none;
+}
+
+.clearfix:before, .clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+#menu {
+    position: absolute;
+    z-index: 1300;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 5px;
+    
+}
+.menu-li {
+    display: inline-block;
+    color: #353535;
+
+}
+.menu-a {
+    color: #353535;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.84);
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #444;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    font-size: 0.9em;
+    
+    
+}
+.menu-a:hover {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.67);
+    
+}
+.menu-li.active .menu-a{
+    color: #fff;
+    background: #000;
+}
+
+.p1 {
+    background: url(images/autumn.jpg);
+    background-size: cover;
+    vertical-align: top;
+}
+.p2 {
+    background: url(images/cubes.jpg);
+    background-size: cover;
+}
+.p3 {
+    background: url(images/atom.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.p4 {
+    background: url(images/game-tex.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.p5 {
+    background: url(images/jobs.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.p6 {
+    background: url(images/space.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.p7 {
+    background: #F0F0F0;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.main-img {
+    margin-top: -200px;
+   
+}
+.line {
+    width: 600px;
+    height: 9px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #000;
+}
+.main-p {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 1px #000;
+}
+.color-1 {
+    color: #48ff90;
+}
+.color-2 {
+    color: #74b182;
+}
+.color-3 {
+    color: #F8FBA2;
+}
+.color-4 {
+    color: #ff3737;
+}
+
+.fp-tooltip{
+    background: rgba(33, 33, 33, 0.82);
+    padding: 5px;
+    border-radius: 3px;
+}
+.p2-block {
+    width: 400px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.91);
+    position: absolute;
+    z-index: 1300;
+    top: 100px;
+    left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #fff;
+}
+.p3-block {
+    width: 600px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.91);
+    position: absolute;
+    z-index: 1300;
+    top: 100px;
+    left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #fff;
+}
+.p5-block {
+    width: 600px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.91);
+    position: absolute;
+    z-index: 1300;
+    top: 100px;
+    left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 15px  #222222;
+}
+.p6-block {
+    width: 400px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.91);
+    position: absolute;
+    z-index: 1300;
+    top: 100px;
+    left: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    box-shadow: 0 0 15px  #222222;
+}
+.slim-line {
+    width: 150px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    left: 50%;
+    margin-left: -75px;
+}
+.slim-line2 {
+    width: 150px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    left: 50%;
+    margin-left: -75px;
+}
+.slim-line3 {
+    width: 70px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -35px;
+}
+.slim-line4 {
+    width: 190px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    left: 50%;
+    margin-left: -85px;
+}
+.quality-ul li {
+    color: #ffffff;
+    font-size: 1.2em;
+    list-style-type: none;
+    line-height: 30px;
+    text-shadow: 0 0 5px #000;
+}
+span {
+    font-style: italic;
+    font-weight: bold;
+    color: #48FF90;
+}
+.p4-left {
+    width: 33.3333333333333%;
+    height: 100%;
+    float: left;
+}
+.p4-center {
+    width: 33.3333333333333%;
+    height: 100%;
+    float: left;
+}
+.p4-right {
+    width: 33.3333333333333%;
+    height: 100%;
+    float: left;
+}
+
+.img-dota {
+    margin-top: 140px;
+}
+
+.img-warcraft {
+    margin-top: 100px;
+}
+
+.img-csgo {
+    margin-top: 150px;
+}
+.war {
+    color: #fff;
+    margin-left: -40px;
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 40px;
+    font-style: italic;
+    text-shadow: 0 0 5px #000;
+}
+.icon-arrow-right {
+    color: #31ff59;
+    font-size: 18px;
+}
+.p5-ul {
+    color: #ffffff;
+    font-size: 1.15em;
+    list-style-type: none;
+    line-height: 30px;
+    text-shadow: 0 0 5px #000;
+    line-height: 35px;
+}
+.q4 {
+    color: #e53333;
+}
+.p7-ul {
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 35px;
+}
+.p7-ul a {
+    text-decoration: none; 
+    border-bottom: 1px dashed #de2c2c;
+    color: #de2c2c;
+}
+.but {
+    display: block;
+    width: 250px;
+    height: 60px;
+    background: #1F5BFF;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 40px;
+}
